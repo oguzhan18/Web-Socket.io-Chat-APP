@@ -1,0 +1,104 @@
+<!---Oğuzhan ÇART |||| ÇART APP |||| e-mail = oguzhancart1@gmail.com ||||  -->
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="og:socket.io - login app " property="og:socket.io app" content="Logging into the application using Socket.io and speaking feature with recording feature">
+  <meta name="description" content="Socket.io">
+  <meta name="description" content="Logibn">
+  <meta name="description" content="Sinup">
+  <meta name="description" content="socket message app">
+  <meta name="description" content="socket ">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Socket APP</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="assest/css/style.css">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/%C3%87art_app_beyaz_%282%29.png/600px-%C3%87art_app_beyaz_%282%29.png" type="image/x-icon" />
+ <!--
+	<SCRIPT language="JavaScript">
+	var password;
+	var pass1="admin";
+	password=prompt('Please enter your password to view this page!','');
+	if (password==pass1+root+user+password)
+	  DocumentType('Login successful');
+	else{
+		alert('Password wrong loser');
+		window.location="https://t.me/cartapp";
+		}
+	</SCRIPT>
+ --> 
+  
+<body>
+<main class="container">
+	<h1><br>
+		<button id="logout" class="btn btn-danger pull-right">Log out</button>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/%C3%87art_app_beyaz_%282%29.png" alt="" width="50" height="50"title="ÇART APP">
+		<a href="" style="padding-left: 3%;"title="About" >About</a>
+		<a href="" style="padding-left: 3%;"title="About" >Contact</a>
+		<!--Social İcon and Bar-->
+		<ul class="social-media-list" style="padding-left: 80%;; margin-top:-50px;">
+			<li><a href="https://github.com/oguzhan18"><img src="https://unpkg.com/simple-icons@latest/icons/github.svg" alt="GitHub" title="GitHub"></a></li>
+			<li><a href="https://www.instagram.com/oguzhan_cart/"><img src="https://unpkg.com/simple-icons@latest/icons/instagram.svg" alt="Instagram" title="Instagram"></a></a></li>
+			<li><a href="https://tr.linkedin.com/in/o%C4%9Fuzhan-%C3%A7art-b73405199"><img src="https://unpkg.com/simple-icons@latest/icons/linkedin.svg" alt="LinkeIn" title="LinkeIn"></a></li>
+			<li><a href="https://500px.com/p/oguzhancart?stats_source=places&stats_medium=photo_grid&view=photos"><img src="https://unpkg.com/simple-icons@latest/icons/500px.svg" alt="Stack Overflow" title="Stack Overflow"></a></li>
+		</ul>
+		<!--Social İcon and Bar-->
+	</h1>
+	<hr>
+	<div class="alert alert-success" id="alert-success"></div>
+	<div class="alert alert-danger" id="alert-error"></div>
+
+	<form class="col-md-6 col-sm-6" id="form-login">
+		<h3>Sign In</h3>
+		<div class="form-group">
+			<label for="login">E-mail:</label>
+			<input type="text" class="form-control" name="login" placeholder="write to e-mail" required>
+		</div>
+		
+		<div class="form-group">
+			<label for="login">Password:</label>
+			<input type="password" class="form-control" name="password"placeholder="write to password" required>
+		</div>
+		
+		<button type="submit" class="btn">Sign In</button>
+	</form>
+	<form class="col-md-6 col-sm-6" id="form-signin">
+		<h3>Sign Up</h3>
+		<div class="form-group">
+			<label for="login">New E-mail:</label>
+			<input type="text" class="form-control" name="login"placeholder="write to new e-mail" required>
+		</div>
+		
+		<div class="form-group">
+			<label for="login">New Password:</label>
+			<input type="password" class="form-control" name="password" placeholder="write to new password" required>
+		</div>
+		<button type="submit" class="btn" id="arama">Join</button>  
+	</form>
+	<div id="messages-container">
+		<div class="users-container">
+			<strong>Logged in users :</strong><br>
+			<span id="usersConnected"></span>
+		</div><br>
+		<form class="form-inline" id="form-add">
+			<div class="form-group">
+				<input type="text" class="form-control" id="messageText" placeholder="Your message here ... ">
+			</div>
+			<button type="submit" class="btn btn-primary">Send</button>
+			
+		</form>
+		
+		<div class="well" id="list"></div>
+	</div>
+</main>
+<center>
+	<footer>
+		© Copyright @ ÇART APP 2019-2021, All Rights Reserved 💜<a href="http://oguzhancart.likesyou.org/"> Oğuzhan ÇART </a>💜 <p id="usersConnected"></p>
+	 </footer>
+</center>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script  src="assest/js/script.js"></script>
+</body>
+</html>
